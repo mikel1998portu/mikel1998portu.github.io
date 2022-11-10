@@ -164,3 +164,38 @@ hr{
     text-align: center;
     padding: 50px;
 }
+
+/*DESCRIPCIOM*/
+
+.container{
+    margin: 20px;
+    padding: 10px 0 10px 0;
+    height: 20%;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: none;
+    border-color: black;
+}
+
+.container p{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.text-ubicacion{
+    text-align: center;
+    padding-top: 40px;
+    background: none;
+}
+
+/*UBICACION*/
+
+.mapa{
+    padding-bottom: 125px;
+    margin-left: 325px;
+    padding-top: 50px;
+}
