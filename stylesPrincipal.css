@@ -1,0 +1,353 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: whitesmoke;
+    color: black;
+    background-color: whitesmoke;
+    background-image: url(img/fondo1\ prueba.png);
+    background-size: 80%;
+    font-size: 16px;
+    font-style:oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+    .showcase {color: white;
+        margin-top: 95px;
+        font-size: 35px;
+        letter-spacing: 8px;
+        text-shadow: -4px -4px 3px #000, 4px 4px 3px #000, -4px 4px 3px #000, 4px -4px 3px #000;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+/*NAVIGATION*/
+
+hr{
+    margin: 5px 0px;
+}
+
+.nav-main{
+    font-size:18px;
+    display:flex;
+    justify-content: space-between;
+    background-image:url(img/89214-floppy-disk-minimalism-computer-hd-artist-minimalist.png);
+    background-size: 100%;
+    align-items: center;
+    height: 95px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width:95%;
+}
+
+.nav-brand{
+    width: 150px
+}
+
+/*NAV LEFT*/
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 2px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*BARRA NAVEGACION*/
+/* CSS Document */
+
+:root{
+    --color: none;
+    --fnd : black;
+    --fndRsp: white;
+    --colorRsp: black;
+    text-decoration: line;
+ }
+ 
+.cajaNav{
+   font-family: sans-serif;
+   display:flex;
+   justify-content: space-between;
+   background:var(--fnd);
+   color: var(--color);
+}
+.cajaNav .barNav{
+   margin:0 10px 0 0;
+}
+.cajaNav .titNav{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   flex: 1;
+   background:var(--fnd);
+   color:var(--color);
+   height:auto;
+}
+.cajaNav .titNav .toggle{
+   display:none;
+}
+.cajaNav .titNav .logo{
+   margin: 10px 10px; 
+}
+.cajaNav .barNav {
+   display:flex;
+   list-style:none;
+   align-items: center;
+   padding:0;
+}
+.cajaNav .barNav li{
+   display:flex;
+   align-items:center;
+   padding: 0 20px ;
+   height:100%;
+}
+.cajaNav .barNav li:hover{
+   background: var(--color);
+   color:var(--fnd);
+   cursor: pointer;
+}
+.cajaNav .barNav li a{
+   text-decoration: none;
+   cursor: pointer;
+   color: none;
+}
+
+.cajaNav .cerrado{
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*SHOWCASE*/
+
+.showcase{
+    box-shadow: 3px 3px 6px 6px
+    rgba(0,0,0,0.50);
+    width: center;
+    height: 400px;
+    background: url(/img/showcase2.jpg) no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.btn{
+    cursor: pointer;
+    display: inline;
+    border: 0px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0px;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
+}
+
+/*NEW CARDS*/
+
+.news-cards{
+    background-image: url(/img/fondo\ menú.png);
+    background-size:200%;
+    padding: 15px;  
+    box-shadow: 2px 2px 4px 4px
+    rgba(0,0,0,0.50);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0px;
+    border-radius: 6px;
+}
+
+.news-cards img{
+    width: 200px;
+    height: 160px;
+}
+
+.news-cards h3{
+    font-size: 20px 0px;
+    margin: 10px 0px;
+}
+
+.news-cards a{
+    padding: 10px 0px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: overline;
+}
+
+/*CLAS BANNER ONE*/
+
+.cards-banner-one{
+    box-shadow: 3px 3px 6px 6px
+    rgba(0,0,0,0.50);
+    width: 100%;
+    height: 350%;
+    background: url('./img/image-four.jpg');
+    background-size: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.cards-banner-one .content{
+    width: 30;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+.cards-banner-one p{
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-top: 100px;
+    height: 200px;
+}
+
+/*CARDS BANNER TWO*/
+
+.cards-banner-two{
+    box-shadow: 3px 3px 6px 6px
+    rgba(0,0,0,0.50);
+    width: 100%;
+    height: 350%;
+    background: url('./img/image-three.jpg') no-repeat center center/cover;
+}
+
+.cards-banner-two .content{
+    width: 50;
+    padding: 100px 0 0 30px;
+    color: white;
+}
+
+.cards-banner-two p{
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-top: 100px;
+    height: 200px;
+    color: aliceblue;
+}
+
+.cards-banner-two h2{
+    font-size: 20px;
+    margin: 10px 0px;
+    color: aliceblue;
+}
+
+/*FOOTER LINKS*/
+
+.footer-links{
+    background: gray;
+    color: darkgrey;
+    font-size: 10px;
+    padding: 20px 0;
+    background-position: center;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul{
+    margin: 0 auto;
+    margin-top: 300%;
+}
+
+.footer-container ul li{
+    line-height: 2.8;
+}
+
+/*SOCIAL*/
+
+.social{
+    margin: 30%;
+    margin-left: 180%;
+ }
+ 
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+ }
+ 
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+ }
+ 
+.links a i{
+    font-size: 2rem;
+    margin: 30%;
+    margin-left: 30px;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+ }
+
+ /*COPYRIGHT*/
+
+ .copyright h3{
+    font-size: medium;
+    text-align: flex;
+    margin-left: 180px;
+ }
+
+ .copyright hr{
+    margin-left: 50%;
+ }

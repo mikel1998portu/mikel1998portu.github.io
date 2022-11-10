@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: whitesmoke;
+    color: black;
+    background-color: whitesmoke;
+    background-image: url(img/fondo1\ prueba.png);
+    background-size: 80%;
+    font-size: 16px;
+    font-style:oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.showcase {color: white;
+        margin-top: 95px;
+        font-size: 35px;
+        letter-spacing: 8px;
+        text-shadow: -4px -4px 3px #000, 4px 4px 3px #000, -4px 4px 3px #000, 4px -4px 3px #000;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+/*NAVIGATION*/
+
+hr{
+    margin: 5px 0px;
+}
+
+.nav-main{
+    font-size:18px;
+    display:flex;
+    justify-content: space-between;
+    background-image:url(img/89214-floppy-disk-minimalism-computer-hd-artist-minimalist.png);
+    background-size: 100%;
+    align-items: center;
+    height: 95px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width:95%;
+}
+
+.nav-brand{
+    width: 150px
+}
+
+/*NAV LEFT*/
+
+.nav-main ul{
+    margin-right: 10PX;
+    display: flex;
+
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 2px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*BARRA NAVEGACION*/
+/* CSS Document */
+
+:root{
+    --color: none;
+    --fnd : black;
+    --fndRsp: white;
+    --colorRsp: black;
+    text-decoration: line;
+ }
+ 
+.cajaNav{
+   font-family: sans-serif;
+   display:flex;
+   justify-content: space-between;
+   background:var(--fnd);
+   color: var(--color);
+}
+.cajaNav .barNav{
+   margin:0 10px 0 0;
+}
+.cajaNav .titNav{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   flex: 1;
+   background:var(--fnd);
+   color:var(--color);
+   height:auto;
+}
+.cajaNav .titNav .toggle{
+   display:none;
+}
+.cajaNav .titNav .logo{
+   margin: 10px 10px; 
+}
+.cajaNav .barNav {
+   display:flex;
+   list-style:none;
+   align-items: center;
+   padding:0;
+}
+.cajaNav .barNav li{
+   display:flex;
+   align-items:center;
+   padding: 0 20px ;
+   height:100%;
+}
+.cajaNav .barNav li:hover{
+   background: var(--color);
+   color:var(--fnd);
+   cursor: pointer;
+}
+.cajaNav .barNav li a{
+   text-decoration: none;
+   cursor: pointer;
+   color: white;
+}
+
+.cajaNav .cerrado{
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*FORMULARIO*/
+
+.form-regist{
+    width: 400px;
+    background-color: grey;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-regist h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.form-regist p{
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.form-regist:hover{
+    color: aliceblue;
+}
+
+.form-regist .boton{
+    width: 100%;
+    background: #1f53c5;
+    border:rgb(0, 0, 0);
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.terminosycondiciones{
+    text-decoration: underline;
+    color: blue;
+}
