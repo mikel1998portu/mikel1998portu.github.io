@@ -11,17 +11,20 @@ body{
     background-color: whitesmoke;
     background-image: url(img/fondo1\ prueba.png);
     background-size: 80%;
-    font-size: 16px;
+    font-size: 1.1vw;
     font-style:oblique;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
     .showcase {color: white;
-        margin-top: 95px;
-        font-size: 35px;
-        letter-spacing: 8px;
+        margin-top: 8%;
+        font-size: 270%;
+        letter-spacing: 200%;
+        width: 95%;
+        margin: auto;
         text-shadow: -4px -4px 3px #000, 4px 4px 3px #000, -4px 4px 3px #000, 4px -4px 3px #000;
         font-family:Verdana, Geneva, Tahoma, sans-serif;}
+        
 a{
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -42,22 +45,28 @@ hr{
     margin: 5px 0px;
 }
 
+.gcse-search {
+ display: flex;
+}
+
 .nav-main{
-    font-size:18px;
+    font-size: 1.2vw;
     display:flex;
+    letter-spacing: 0.1vw;
     justify-content: space-between;
     background-image:url(img/89214-floppy-disk-minimalism-computer-hd-artist-minimalist.png);
     background-size: 100%;
     align-items: center;
-    height: 95px;
-    padding: 20px 0;
+    padding: 1vh 2vh;
     position: fixed;
-    top: 0;
-    width:95%;
+        top: 0vw;
+        width:95vw;
+        height: 8vw;
+        ...
 }
 
 .nav-brand{
-    width: 150px
+    width: 12%
 }
 
 /*NAV LEFT*/
@@ -67,20 +76,20 @@ hr{
 }
 
 .nav-main ul li{
-    padding: 10px;
+    padding: 2%;
 }
 
 .nav-main ul li a{
-    padding: 2px;
+    padding: 2%;
 }
 
 .nav-main ul li a:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2% solid black;
 }
 
 .nav-main ul.nav-menu{
     flex: 1;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 /*BARRA NAVEGACION*/
@@ -102,7 +111,7 @@ hr{
    color: var(--color);
 }
 .cajaNav .barNav{
-   margin:0 10px 0 0;
+   margin:0% 1% 0% 0%;
 }
 .cajaNav .titNav{
    display:flex;
@@ -117,7 +126,7 @@ hr{
    display:none;
 }
 .cajaNav .titNav .logo{
-   margin: 10px 10px; 
+   margin: 1% 1%; 
 }
 .cajaNav .barNav {
    display:flex;
@@ -128,7 +137,7 @@ hr{
 .cajaNav .barNav li{
    display:flex;
    align-items:center;
-   padding: 0 20px ;
+   padding: 0% 2% ;
    height:100%;
 }
 .cajaNav .barNav li:hover{
@@ -144,7 +153,7 @@ hr{
 
 .cajaNav .cerrado{
     width: 65%;
-    padding: 10px;
+    padding: 1%;
     border-radius: 5px;
 }
 
@@ -154,10 +163,12 @@ hr{
     box-shadow: 3px 3px 6px 6px
     rgba(0,0,0,0.50);
     width: center;
-    height: 400px;
+    height: 80%;
     background: url(/img/showcase2.jpg) no-repeat center center/cover;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    padding-top: 10%;
+    margin-top: 9%;
+    padding-bottom: 10%;
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -170,12 +181,12 @@ hr{
     display: inline;
     border: 0px;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 1% 2%;
     background: black;
     color: white;
-    font-size: 15px;
+    font-size: 1.2vw;
     border: 1px solid white;
-    margin: 10px 0px;
+    margin: 2% 0%;
 }
 
 .btn:hover{
@@ -184,36 +195,43 @@ hr{
 
 .showcase h2,
 .showcase p{
-    margin-bottom: 10px;
+    margin-bottom: 3%;
 }
 
 /*NEW CARDS*/
 
 .news-cards{
+    text-align: center;
+    width: 95%;
     background-image: url(/img/fondo\ menú.png);
     background-size:200%;
-    padding: 15px;  
+    padding: 2%;  
     box-shadow: 2px 2px 4px 4px
     rgba(0,0,0,0.50);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 10px 0px;
-    border-radius: 6px;
+    gap: 1%;
+    margin: 2% 2%;
+    border-radius: 2%;
+    align-items: center;
 }
 
 .news-cards img{
-    width: 200px;
-    height: 160px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+   margin:auto;
+    width: 90%;
+    height: 90%;
 }
 
 .news-cards h3{
-    font-size: 20px 0px;
-    margin: 10px 0px;
+    font-size: 1vw;
+    margin: 3% 0%;
 }
 
 .news-cards a{
-    padding: 10px 0px;
+    padding: 4% 0%;
     color: black;
     text-transform: uppercase;
     display: inline-block;
@@ -229,29 +247,29 @@ hr{
 .cards-banner-one{
     box-shadow: 3px 3px 6px 6px
     rgba(0,0,0,0.50);
-    width: 100%;
+    width: 95%;
     height: 350%;
     background: url('./img/image-four.jpg');
     background-size: 100%;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    padding-bottom: 10%;
+    margin: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: end;
+
+
 }
 
 .cards-banner-one .content{
     width: 30;
-    padding: 90px 0 0 30px;
+    padding: 10% 0 0 3%;
     color: white;
 }
 
 .cards-banner-one p{
-    font-size: 20px;
-    margin: 10px 0px;
-    padding-top: 100px;
-    height: 200px;
+    font-size: 1.8vw;
+    margin: 3% 0%;
+    padding-top: 4%;
+    height: 40%;
 }
 
 /*CARDS BANNER TWO*/
@@ -266,21 +284,21 @@ hr{
 
 .cards-banner-two .content{
     width: 50;
-    padding: 100px 0 0 30px;
+    padding: 10% 0 0 3%;
     color: white;
 }
 
 .cards-banner-two p{
-    font-size: 20px;
-    margin: 10px 0px;
-    padding-top: 100px;
-    height: 200px;
+    font-size: 1vw;
+    margin: 3% 0%;
+    padding-top: 40%;
+    height: 80%;
     color: aliceblue;
 }
 
 .cards-banner-two h2{
-    font-size: 20px;
-    margin: 10px 0px;
+    font-size: 1.2vw;
+    margin: 3% 0%;
     color: aliceblue;
 }
 
@@ -289,15 +307,15 @@ hr{
 .footer-links{
     background: gray;
     color: darkgrey;
-    font-size: 10px;
-    padding: 20px 0;
+    font-size: 1.1vw;
+    padding: 2% 0%;
     background-position: center;
 }
 
 .footer-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 1%;
     align-items: flex-start;
     justify-content: center;
 }
@@ -320,8 +338,8 @@ hr{
  
 .social p{
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 1.6vw;
+    margin-bottom: 1%;
  }
  
 .links{
@@ -334,7 +352,7 @@ hr{
 .links a i{
     font-size: 2rem;
     margin: 30%;
-    margin-left: 30px;
+    margin-left: 3%;
     align-items: center;
     display: flex;
     justify-items: center;
@@ -343,11 +361,25 @@ hr{
  /*COPYRIGHT*/
 
  .copyright h3{
-    font-size: medium;
-    text-align: flex;
-    margin-left: 180px;
+    font-size: 1.2vw;
+    text-align:left;
+    margin-left: 0%;
+    justify-content: space-between
  }
 
  .copyright hr{
-    margin-left: 50%;
+    align-items:center;
+    margin-right: 45%;
+    
  }
+
+ .social {
+    align-items: flex-start;
+    justify-content: space-between
+ }
+ .links {
+    size: 10%;
+    align-items:center;
+    justify-content: space-between;
+ }
+ 

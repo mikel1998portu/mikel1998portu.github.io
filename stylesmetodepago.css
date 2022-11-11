@@ -1,0 +1,206 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: whitesmoke;
+    color: black;
+    background-color: whitesmoke;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NCA0HBxAHBwcHBw0HBwcHDQ8IDQcNFREWFhURExMYHSggGBoxGxUTITEhJSkrOi4uFx8zODMtNygtLisBCgoKDQ0NDw0NDzcZFRk3Ky0rKy0rLS0tLSstLSstKysrKy03LSsrKysrKy0rKy0tLSsrKysrLSsrKy0rKy0tK//AABEIAUsAmAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EABsQAQEBAQADAQAAAAAAAAAAAAACAQMREhME/8QAGwEAAgMBAQEAAAAAAAAAAAAAAgMAAQQFBgf/xAAZEQEBAQEBAQAAAAAAAAAAAAAAAQIREgP/2gAMAwEAAhEDEQA/APj60R12pSLQUVVLxPC8wyE6XmGTgcwycEyfQc4fGFxh0YGse6ZGHThcYdOFVl1Rzg8xU4ZmFUm1MwWYmYLMLpdqsxfhfhfgFV0KCQKnkUX4X4b5HtuBQXhPApFWK8LzBZgskyQnaThk4qZNmRMX0XGHxgYk6JBWD6UUYdOKiTZkqsmqucHmLmR5JVJtVmL8DyV+pdB0Hhfgfqnguq6Dwg/ClJ15DwvwLwvJdGR7zgPAsweSLJHIGwGSOZMmDJgUZ9gmDZgcQdHNbD9QRB0QOIOiAVzfrQTBsyOYMmC6xboZkeSPJHkl2M90Xkr9TclPUqwPor1T1N9U9S7E9E+qzPVAp6ePyRZB2QPObpvovCMgyYOzmZPMQNFTzNnmdHI6OSM30JjmdPM+OR08lWuf9SJ5mzzPnkZPMFrm/UieZmQdnMeQGuf9KRkDyTshfoCsetE+qep/onqXYD0R6q9T/VXqXYnoj1WbsoHi/Ty+ch5yap5GTydHr6bWWeRscmmeJ0cU6XpmjkfHJpjifHFLWX6M0cjp5NUcTZ5AtYfoyzyHnJrzkLOQOud9YyZzX82v5L+adc36xk+aejV80+aOftl9E9WnYDsApF0z+qvU/wBVbILE9M+yh+ygeL9OPPEyeLbPEyeDV6fVLWKeJ0cWyeJ0cU9FarLHE6OLXHE6eIbpm2yTxNnk1zxMnkC6Y9smcl/Jtzkv5B9MP1jD8k3m3fJW8l9c365YfmHebbvMO819c36Ri2AbDbvMuuaMemTYDstWwDYUX1n2UO2UVxPQZ4GTxbZ4mTxX6fWbWKeJ0cWueJscVei9VljidPFqnibPIN0z7ZJ5Dzk15yHnIN0y7Y85L+TZ8l/NXWTcYt5B3k3fNW81zTD9csG8wVzb95l1zFK5v1wwVzKrm6Fcyq5i6w7ywbANhtrmXXNfWbWWLYRpqEQux0J4jni2ZyHnIj0+s2sk8TY5NOcjZ5K9AtZp5GZyaZ5jzmH0RplzmLObVnNfzV1n0y/NPm1fNPROs24yfNW82vYDsL6ybyx7zLrm3bAK5ilYvphgrmTfN0K5k3zHKwfT5sFcy65t1cy65i6y6ww1zRqrmi+k3DsZyHnNozmPIY/T6haz5zMnmdkGZCdBaRnMecz8gWQrpOmf0X6H+i/ROk6ZvRNho9VbKdI1GbYVsNGyHZX1m3GbYDsNOyDZFKzbyy1BNw21JVyKVk3hhqC6hsqC6gfWTXzY6hGioRfSr83byBZBmSLJY+voHQZI8keSLJV0NBki9R5IvCdLpXqnqb4V4X0qleqtk3cVuJ0nROyHZO3A7giNQjZDsnbgNwUZ9QipKqWmsKrBRn3lnqS6lorC9wTPrLPUobuIsq5dnMFmJgsY3s0zB5isFiKq8xfheLQFD4TwJWrKofAdwYdWXoG4DcM0GihGi9BRmg0UI0XRVG0VQ4RqF7hemUXoiNQGomosux180eaTlCymN607NHmk5Q81A03NEXmr8oCjVofKeVl1eh1W6HdFCtJug3V7oN0UJ0rdBWr3S60UhOlVpVaKtKrRyM+lVpe6lUCqHITU3ULqkXwt0sseWxZ0HnRk49Y25Y5tjzoZPRXA1syl+zNliy04CtHsnsR7p7r4VTdoO0Xth2xSFapm0DaL2wbY5CdUe0CqBtgqxyEaoqomqVVlXY5GfVXVF1QKsurHIRaZVoz1aL4XdNGdRz1cyexk9mXy9dXTnqbPVy57Gx2V5DXTnqPOjnT2Mzqnku1v+ifRizqv6r8lWtn0DvRl+qt6LmSdVp2wbbPvQO9BzJGqftl1ZO9AV0MmSNU2rJuy66EX0HMs29G10LroRXQquhkyz60fXRGSuiL8lXRM9zJ7uNP6DZ/Qy+XtLXYnudHdxZ/QdH6E8gtdqe5s9nHn9Bs908lWutnYWdnLzuPO6eStV0fqn1c/7L+wpkjVbt6h3qxfZW9RzJGq171BXVl3qXXUcyzb0011IvqRXUm+pkyy70fXUqurPXUqupkyz3TTXVGKuqL8lXTkT+gyf0ONPcyf0MfHubXan9B0focOf0HR+hfku13Y/QbP6HEj9B0foX5K1XanuZndxp/QbP6F+SNadbO4vu5WdxZ3X5I1p0/sm9nO+6fYcyzb0372Lrqx72BvUyZZt6a66k31Zq6l11HMs2q0V1LrqzV0LroLhNaK6oyb0UvhbzGdzJ7uVnUedmF7qurPc2O7kZ2MnsOQu12o/QdH6HFjudHcUhOq7U/oNnu40dzZ7i8s2q7E9zM7uRPc2ewvLPqupnZf2c3Ows6imWfVdD7B3qxfVPqORm0171Lrozb0BvRfCrGjegN6Eb0DtrB5P20ZttETw8ZnQWdWPLXludK9k251MnqwZY56GSgroT1Ons5s9DJ6GQnTpz2Ons5c9Dp6mRn1HUnsbPVy56nT1HIz6jpT1HnVzp6GZ0Xxn1G/6p9GPOi/oIm5a96B22f3V7oDyftq9yfdXupfg7bWz+yKX4eL9l+xXlfly5p6c32FlE+V5pkqq0ZY5tmyhzR2aXY1zZs2xzRk0bKTrLbNnTbDNHTRkI1ltmzJtjmzJsRGsNeWLLZssWUhVw0+6e5HsnsivB/sr2J9k9lJ5N9kK9kUnl5JFI5ErviWFeDlULNHml4LDs1VNzTJ0nNHOn5pdh86bNM86ZOmylajTNGTTPOmToidRoyhZROaLNWVYdlL9is1flAcM8p5B5X5UnBeVg8oiceYREcWOytFLHEWLA4vDsqHg50vByfkFNnTJ0nDJOhdOnTJ0mTJGTYdmjzSpHiy7DM1eaDBIDgvKeQrRQvKlIpXH//Z);
+    background-size: 80%;
+    font-size: 16px;
+    font-style:oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.showcase {color: white;
+        margin-top: 95px;
+        font-size: 35px;
+        letter-spacing: 8px;
+        text-shadow: -4px -4px 3px #000, 4px 4px 3px #000, -4px 4px 3px #000, 4px -4px 3px #000;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+/*NAVIGATION*/
+
+hr{
+    margin: 5px 0px;
+}
+
+.nav-main{
+    font-size:18px;
+    display:flex;
+    justify-content: space-between;
+    background-image:url(img/89214-floppy-disk-minimalism-computer-hd-artist-minimalist.png);
+    background-size: 100%;
+    align-items: center;
+    height: 95px;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width:95%;
+}
+
+.nav-brand{
+    width: 150px
+}
+
+/*NAV LEFT*/
+
+.nav-main ul{
+    margin-right: 10PX;
+    display: flex;
+
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a{
+    padding: 2px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+/*BARRA NAVEGACION*/
+/* CSS Document */
+
+:root{
+    --color: none;
+    --fnd : black;
+    --fndRsp: white;
+    --colorRsp: black;
+    text-decoration: line;
+ }
+ 
+.cajaNav{
+   font-family: sans-serif;
+   display:flex;
+   justify-content: space-between;
+   background:var(--fnd);
+   color: var(--color);
+}
+.cajaNav .barNav{
+   margin:0 10px 0 0;
+}
+.cajaNav .titNav{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+   flex: 1;
+   background:var(--fnd);
+   color:var(--color);
+   height:auto;
+}
+.cajaNav .titNav .toggle{
+   display:none;
+}
+.cajaNav .titNav .logo{
+   margin: 10px 10px; 
+}
+.cajaNav .barNav {
+   display:flex;
+   list-style:none;
+   align-items: center;
+   padding:0;
+}
+.cajaNav .barNav li{
+   display:flex;
+   align-items:center;
+   padding: 0 20px ;
+   height:100%;
+}
+.cajaNav .barNav li:hover{
+   background: var(--color);
+   color:var(--fnd);
+   cursor: pointer;
+}
+.cajaNav .barNav li a{
+   text-decoration: none;
+   cursor: pointer;
+   color: white;
+}
+
+.cajaNav .cerrado{
+    width: 65%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*METODO DE PAGO*/
+
+/* If you like this, please check my blog at codedgar.com.ve */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body{
+font-family: 'Work Sans', sans-serif;
+background: #00d2ff; 
+background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff); 
+background: linear-gradient(to right, #3a7bd5, #00d2ff); 
+  /* Thanks to uigradients :) */
+}
+
+.container{
+    margin-top: 150px;
+}
+
+.card{
+  background:#16181a;  border-radius:14px; max-width: 300px; display:block; margin:auto;
+  padding:60px; padding-left:20px; padding-right:20px;box-shadow: 2px 10px 40px black; z-index:99;
+}
+
+.logo-card{max-width:50px; margin-bottom:15px; margin-top: -19px;}
+
+label{display:flex; font-size:10px; color:white; opacity:.4;}
+
+input{font-family: 'Work Sans', sans-serif;background:transparent; border:none; border-bottom:1px solid transparent; color:#dbdce0; transition: border-bottom .4s;}
+input:focus{border-bottom:1px solid #1abc9c; outline:none;}
+
+.cardnumber{display:block; font-size:20px; margin-bottom:8px; }
+
+.name{display:block; font-size:15px; max-width: 200px; float:left; margin-bottom:15px;}
+
+.toleft{float:left;}
+.ccv{width:50px; margin-top:-5px; font-size:15px;}
+
+.receipt{background: #dbdce0; border-radius:4px; padding:5%; padding-top:200px; max-width:600px; display:block; margin:auto; margin-top:-180px; z-index:-999; position:relative;}
+
+.col{width:50%; float:left;}
+.bought-item{background:#f5f5f5; padding:2px;}
+.bought-items{margin-top:-3px;}
+
+.cost{color:#3a7bd5;}
+.seller{color: #3a7bd5;}
+.description{font-size: 13px;}
+.price{font-size:12px;}
+.comprobe{text-align:center;}
+.proceed{position:absolute; transform:translate(300px, 10px); width:50px; height:50px; border-radius:50%; background:#1abc9c; border:none;color:white; transition: box-shadow .2s, transform .4s; cursor:pointer;}
+.proceed:active{outline:none; }
+.proceed:focus{outline:none;box-shadow: inset 0px 0px 5px white;}
+.sendicon{filter:invert(100%); padding-top:2px;}
+
+@media (max-width: 600px){
+  .proceed{transform:translate(250px, 10px);}
+  .col{display:block; margin:auto; width:100%; text-align:center;}
+}
