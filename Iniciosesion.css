@@ -1,0 +1,103 @@
+body {
+  margin: auto;
+  background: url(img/image-four.jpg);
+  background-repeat: no-repeat;
+  background-size: 1750px; 
+}
+
+/*MENU NAVEGACION*/
+.NavMenu {
+    margin-left: 500px; /* se utiliza un porcentaje para que la posición del menú se ajuste automáticamente al tamaño de pantalla */
+    margin-top: 20px;
+    width: 60%; /* se utiliza un porcentaje para que el tamaño del menú se ajuste automáticamente al tamaño de pantalla */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+}
+
+#login-menu {
+  display: flexbox;
+  text-align: center;
+  width: 80%; /* se utiliza un porcentaje para que el tamaño del menú de inicio de sesión se ajuste automáticamente al tamaño de pantalla */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+    margin-top: 10%;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  /* reglas de estilo para pantallas pequeñas */
+  .NavMenu {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%; /* se ajusta el tamaño del menú para que ocupe toda la pantalla */
+  }
+}
+
+

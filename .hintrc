@@ -3,46 +3,61 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off",
-        "frame-title": "off"
-      }
-    ],
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off",
         "button-name": "off"
+      }
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
       }
     ],
     "axe/structure": [
       "default",
       {
-        "list": "off",
-        "listitem": "off"
+        "listitem": "off",
+        "list": "off"
       }
     ],
-    "axe/forms": [
-      "default",
-      {
-        "label": "off"
-      }
-    ],
+    "button-type": "off",
     "axe/parsing": [
       "default",
       {
-        "duplicate-id-active": "off"
+        "duplicate-id-active": "off",
+        "duplicate-id-aria": "off"
       }
     ],
-    "no-inline-styles": "off",
     "compat-api/html": [
       "default",
       {
         "ignore": [
           "iframe[loading]"
         ]
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "frame-title": "off",
+        "image-alt": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-size-adjust"
+        ]
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
       }
     ]
   }

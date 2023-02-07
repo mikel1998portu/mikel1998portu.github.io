@@ -1,0 +1,85 @@
+header {
+  background-color: lightgray;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav a:hover {
+  background-color: lightblue;
+  color: white;
+  border-radius: 5px;
+}
+
+nav i.fa {
+  margin-right: 5px;
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.imgdes{
+  width: 250px;
+}
+
+.imgdes1{
+  width: 150px;
+}
+
+/* Default styles */
+section {
+  width: 30%;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  section {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

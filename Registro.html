@@ -4,72 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MATRIUX</title>
     <link rel="icon" type="image/x-icon" href="/img/FAVICON.png">
-    <!--FONT AWESOME-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--FONT OSWALD-->
-    <enlace rel="preconectar" href="https://fonts.googleapis.com"><enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin><enlace href="https: //fonts.googleapis.com/css2? familia= Oswald:peso@200;300;400 & display=swap" rel="stylesheet">
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="stylesRegistro.css">
+    <link rel="stylesheet" href="Registro.css">
+    <title>MATRIUX</title>
 </head>
 <body>
 
-    <!--BARRA NAVEGACION-->
-
-    <div class="container">
-        <nav class="nav-main">
-            <img src="/img/logo.png" alt="Matriux logo" class="nav-brand"> 
-            <ul class="main-menu">
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="Empresa.html">EMPRESA</a>
-                </li>
-                <li>
-                    <a href="Servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="#">VENTA DE EQUIPOS</a>
-                </li>
-                <li>
-                    <a href="#">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="mas.html">MAS</a>
-                </li>
-                <li>
-                    <a href="#">METODO DE PAGO</a>
-                </li>
+    <div class="NavMenu">
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li>
+                <a href="#">Informacion</a>
+                <ul>
+                  <li><a href="#">A que nos dedicamos</a></li>
+                  <li><a href="#">Quienes somos</a></li>
+                  <li><a href="#">Donde nos encontramos</a></li>
+                </ul>
+              </li>
+              <li><a href="Iniciosesion.html">Inicio de sesión</a></li>
+              <li><a href="">Registro</a></li>
+              <li><a href="#">Información</a></li>
+              <li><a href="#">Contacto</a></li>
             </ul>
-
-                
-            <!--
-            <div class="gcse-search"></div>
-    <script async src="https://cse.google.com/cse.js?cx=e27e897a77d184317">
-    </script>
-    <div class="toggle" onclick="alternar('menu')"></div>
-    </div>-->
-
-        </nav>
+          </nav>          
     </div>
 
+        <!-- Formulario de registro -->
+        <form class="register-form" onsubmit="return redirectToHome()">
+          <h1>Registrarse</h1>
+          <input type="text" placeholder="Nombre" id="name">
+          <input type="email" placeholder="Correo electrónico" id="email">
+          <input type="password" placeholder="Contraseña" id="password">
+          <input type="password" placeholder="Confirmar contraseña" id="confirm-password">
+          <button type="submit">Registrarse</button>
+        </form>
+        <!-- Mensaje de éxito -->
+        <div class="success-message">
+          ¡Te has registrado con éxito!
+        </div>
+        <!-- Mensaje de error -->
+        <div class="error-message">
+          Ha ocurrido un error al intentar registrarte. Por favor, inténtalo de nuevo.
+        </div>
 
-    <!--FORMULARIO-->
-
-        <section class="form-regist">
-           <h4>Formulario Registro</h4>
-           <input class="controls" type="text" name="Nombre" id="Nombre" placeholder="Ingrese su nombre"> 
-           <input class="controls" type="text" name="Apellido" id="Nombre" placeholder="Ingrese su apellido">
-           <input class="controls" type="email" name="Correo" id="Correo" placeholder="Ingrese su Correo">
-           <input class="controls" type="password" name="password" id="password" placeholder="Ingrese su Contraseña">
-           <input class="controls" type="password" name="password" id="password" placeholder="Repita su Contraseña">
-           <p>Estoy de acuerdo con <a class="terminosycondiciones" href="#">Terminos y condiciones</a></p>
-           <input class="boton" type="button" value="Registrar">
-           <p><a href="Iniciosesion.html">¿Ya tengo una cuenta?</a></p>
-        </section>
-    </div> 
-
+        <script src="main.js"></script>
 </body>
 </html>

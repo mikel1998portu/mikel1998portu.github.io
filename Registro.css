@@ -1,0 +1,95 @@
+body{
+  background: url(img/image-four.jpg);
+  background-repeat: no-repeat;
+  background-size: 1890px;
+}
+
+/*MENU NAVEGACION*/
+.NavMenu{
+  margin-left: 900px;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+/* Estilos para el formulario de registro */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 150px;
+  }
+
+.register-form h1 {
+  text-align: center;
+  color: #fff;
+  }
+
+.register-form input {
+margin: 10px 0;
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+
+.register-form button {
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.register-form button:hover {
+background-color: #444;
+}
+
+/* Estilos para el mensaje de éxito */
+.success-message {
+display: none;
+text-align: center;
+color: green;
+}
+/* Estilos para el mensaje de error */
+.error-messag{
+  display: none;
+  text-align: center;
+  color:#fff;
+}
