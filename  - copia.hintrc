@@ -6,8 +6,7 @@
     "axe/name-role-value": [
       "default",
       {
-        "button-name": "off",
-        "input-button-name": "off"
+        "button-name": "off"
       }
     ],
     "axe/keyboard": [
@@ -51,12 +50,7 @@
       "default",
       {
         "ignore": [
-          "text-size-adjust",
-          "-webkit-text-size-adjust",
-          "-webkit-tap-highlight-color",
-          "scroll-behavior",
-          "text-decoration-skip-ink",
-          "text-align: -webkit-match-parent"
+          "text-size-adjust"
         ]
       }
     ],
