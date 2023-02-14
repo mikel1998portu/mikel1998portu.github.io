@@ -1,0 +1,165 @@
+body{
+    background-image: url(img/fondo\ menú2.png);
+}
+
+/*MENU NAVEGACION*/
+.NavMenu{
+    margin-left: 900px;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 5px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  nav ul ul {
+    display: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+
+  /*AVATAR*/
+
+.avatar{
+    display: flex;
+    justify-items: center;
+}
+
+.avatar-mikel img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.avatar-mikel h1{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.avatar-mikel h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.avatar-elexpe img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.avatar-elexpe h1{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 150px;
+    color: black;
+}
+
+.avatar-elexpe h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.avatar-asier img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.avatar-asier h1{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 150px;
+    color: black;
+}
+
+.avatar-asier h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.avatar-eneko img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.avatar-eneko h1{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 150px;
+    color: black;
+}
+
+.avatar-eneko h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.avatar-isma img{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.avatar-isma h1{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 150px;
+    color: black;
+}
+
+.avatar-isma h2{
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: black;
+}

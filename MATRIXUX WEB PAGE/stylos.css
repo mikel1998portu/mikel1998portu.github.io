@@ -1,0 +1,130 @@
+body{
+  background: url(/img/image-four-transformed.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 1890px;
+}
+
+img{
+  width: 250px;
+}
+
+/*MENU NAVEGACION*/
+.NavMenu{
+  margin-left: 850px;
+  margin-top: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+  
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+  
+nav li {
+  margin: 0 10px;
+}
+  
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+  
+nav a:hover {
+  color: #ccc;
+ }
+  
+nav ul ul {
+  display: none;
+ }
+  
+nav ul li:hover > ul {
+  display: block;
+  position: absolute;
+}
+  
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+.banner_title h2{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.banner_title .llamanos{
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none; 
+  display: inline-block;
+  background: #1A2849;
+  padding: 20px;
+}
+
+.banner_img{
+  animation: 2.5s linear infinite;
+}
+
+.banner_img img{
+  width: 400px;
+  display: block;
+}
+
+footer{
+  color:white;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+@media (max-width:768px) {
+  .NavMenu{
+    margin-left: 0;
+  }
+  
+  nav{
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .banner{
+    flex-direction: column;
+    text-align: center;
+    margin-left: 0;
+  }
+  
+  .banner_img{
+    margin: 50px 0;
+  }
+}
+
+
+.burbuja {
+  width: 10%;
+  height: 10%;
+}
+
+@media screen and (max-width: 700px) {
+  .burbuja {
+    width: 5%;
+    height: 5%;
+  }
+}
+
+  

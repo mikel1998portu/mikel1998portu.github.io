@@ -1,0 +1,170 @@
+body{
+    background-image: url(img/fondonegro.jpg);
+}
+
+/*MENU NAVEGACION*/
+.NavMenu{
+    margin-left: 900px;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 5px;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  nav ul ul {
+    display: none;
+  }
+  
+  nav ul li:hover > ul {
+    display: block;
+    position: absolute;
+  }
+
+/*NEW CARDS*/
+
+.news-cards{
+    background-image: url(/img/fondo\ menú.png);
+    background-size:200%;
+    padding: 15px;  
+    box-shadow: 2px 2px 4px 4px
+    rgba(0,0,0,0.50);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0px;
+    border-radius: 6px;
+}
+
+.news-cards img{
+    width: 200px;
+    height: 160px;
+}
+
+.news-cards h3{
+    font-size: 20px 0px;
+    margin: 10px 0px;
+}
+
+.news-cards a{
+    padding: 10px 0px;
+    color: black;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: bold;
+}
+
+.news-cards a:hover{
+    text-decoration: overline;
+}
+
+/*CLAS BANNER ONE*/
+
+.cards-banner-one{
+    box-shadow: 3px 3px 6px 6px
+    rgba(0,0,0,0.50);
+    width: 100%;
+    height: 350%;
+    background: url('./img/image-four.jpg');
+    background-size: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.cards-banner-one .content{
+    width: 30;
+    padding: 90px 0 0 30px;
+    color: white;
+}
+
+.cards-banner-one p{
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-top: 100px;
+    height: 200px;
+}
+
+/*CARDS BANNER TWO*/
+
+.cards-banner-two{
+    box-shadow: 3px 3px 6px 6px
+    rgba(0,0,0,0.50);
+    width: 100%;
+    height: 350%;
+    background: url('./img/image-three.jpg') no-repeat center center/cover;
+}
+
+.cards-banner-two .content{
+    width: 50;
+    padding: 100px 0 0 30px;
+    color: white;
+}
+
+.cards-banner-two p{
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-top: 100px;
+    height: 200px;
+    color: aliceblue;
+}
+
+.cards-banner-two h2{
+    font-size: 20px;
+    margin: 10px 0px;
+    color: aliceblue;
+}
+
+/*FOOTER LINKS*/
+
+.footer-links{
+    background: gray;
+    color: darkgrey;
+    font-size: 10px;
+    padding: 20px 0;
+    background-position: center;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul{
+    margin: 0 auto;
+    margin-top: 300%;
+}
+
+.footer-container ul li{
+    line-height: 2.8;
+}
