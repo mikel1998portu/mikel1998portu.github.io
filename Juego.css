@@ -4,7 +4,7 @@
     font-family: 'Mochiy Pop One';
 }
 body{
-    background: url(img/fondo.jpg);
+    background: url(/img/2848735.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0;
@@ -18,9 +18,7 @@ h1{
     padding: 20px 30px;
 }
 footer{
-    position: block;
-    bottom: 0;
-    left: 0;
+   margin-top: 90%;
     width: 100%;
     background-color: #000;
     color: #000;

@@ -1,12 +1,8 @@
 body{
-  background: url(/img/image-four-transformed.jpeg);
-  background-size: cover;
+  background: url(/img/image-four.jpeg);
   background-repeat: no-repeat;
-  background-size: 1890px;
-}
-
-img{
-  width: 250px;
+  background-size: cover;
+  background-color: whitesmoke;
 }
 
 /*MENU NAVEGACION*/

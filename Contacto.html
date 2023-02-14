@@ -6,45 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/img/FAVICON.png">
     <!--CUSTOM CSS-->
-    <script href="contacto.js"></script>
     <link rel="stylesheet" href="Contacto.css">
     <title>MATRIUX</title>
 </head>
 <body>
-    
-      <!-- Responsive navbar-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#!">MATRIUX S.A</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+
+    <div class="NavMenu">
+        <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li>
+                <a href="#">Informacion</a>
+                <ul>
+                  <li><a href="Aquenosdedicamos.html">A que nos dedicamos</a></li>
+                  <li><a href="#">Quienes somos</a></li>
+                  <li><a href="#">Donde nos encontramos</a></li>
+                </ul>
+              </li>
+              <li><a href="Iniciosesion.html">Inicio de sesión</a></li>
+              <li><a href="#">Registro</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </div>
+          </nav>          
     </div>
-</nav>
-<form class="form">
-    <h2>Formulario de contacto</h2>
-    <div class="form-group">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message" required></textarea>
-    </div>
-    <div class="form-group">
-      <button type="submit">Enviar</button>
-    </div>
+    <!-- MEnu de contacto -->
+<div id="contact-menu">
+  <h2>Contacto</h2>
+  <form>
+    <label for="name">Nombre:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="message">Mensaje:</label><br>
+    <textarea id="message" name="message"></textarea><br>
+    <button type="submit">Enviar</button>
   </form>
-  
+</div>
+
+<script src="contacto.js"></script>
+
 </body>
 </html>
