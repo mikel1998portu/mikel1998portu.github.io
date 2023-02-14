@@ -1,164 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One';
+}
 body{
-	background: rgb(19,38,247); /* Old browsers */
-	background: -moz-linear-gradient(left,  rgba(19,38,247,1) 0%, rgba(224,243,250,1) 35%, rgba(224,243,250,1) 65%, rgba(19,38,247,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(19,38,247,1)), color-stop(35%,rgba(224,243,250,1)), color-stop(65%,rgba(224,243,250,1)), color-stop(100%,rgba(19,38,247,1))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  rgba(19,38,247,1) 0%,rgba(224,243,250,1) 35%,rgba(224,243,250,1) 65%,rgba(19,38,247,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  rgba(19,38,247,1) 0%,rgba(224,243,250,1) 35%,rgba(224,243,250,1) 65%,rgba(19,38,247,1) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  rgba(19,38,247,1) 0%,rgba(224,243,250,1) 35%,rgba(224,243,250,1) 65%,rgba(19,38,247,1) 100%); /* IE10+ */
-	background: linear-gradient(to right,  rgba(19,38,247,1) 0%,rgba(224,243,250,1) 35%,rgba(224,243,250,1) 65%,rgba(19,38,247,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1326f7', endColorstr='#1326f7',GradientType=1 ); /* IE6-9 */
-	font-size: 16px;
-	text-align: center;
+    background: url(img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
 }
-canvas{
-	float: left;
-	margin:15px 0 0 30px;
+h1{
+    width: fit-content;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 60px;
+    box-shadow: 5px 5px 0 #000;
+    padding: 20px 30px;
 }
-h3{
-	color: #FF4000;
-	font-family: lobster;
-	font-size: 2em;
-	font-weight: lighter;
-	text-shadow: 3px 3px 2px rgba(50, 50, 50, .7);
-}
-#dadoSorteo{
-	background:url(imagenes/dadoSorteo.png);
-	height: 150px;
-	width: 150px;
-}
-#elegirAmarillo{
-	background: yellow;
-	font-family: lobster;
-	height: 100px;
-	width: 100px;
-}
-#elegirRojo{
-	background: red;
-	font-family: lobster;
-	height: 100px;
-	/*margin-left: 35%;*/
-	width: 100px;
-}
-#jugar{
-	background:url(imagenes/botonInicio.png);
-	font-size: 3em;
-}
-#jugarDeNuevo{
-	font-size: 1.5em;
-	margin: 2em 0 0 0 ;
-}
-#marcador{
-	/*background: gold;*/
-	float: left;
-	height: 240px;
-	margin: 0;
-	padding: 0 0 20px 0;
-	width: 300px;
-}
-#marcador input{
-	font-family: lobster;
-	font-size: 1.5em;
-	font-weight: bolder;
-	height: 50px;
-	margin:0 0 1em 0;
-	text-align: center;
-	width: 50px;
-}
-#marcador p{
-	color: white;
-	font-family: lobster;
-	font-size: 1.2em;
-	margin: 0;
-	padding: 0;
-}
-#marcadorRojo{
-	background: #ff0000;
-}
-#marcadorAmarillo{
-	background: #ffff00;
+footer{
+    position: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #000;
+    font-size: 12px;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-#panelContenedor{
-	/*background: lime;*/
-	float: left;
-	height: 650px;
-	width: 300px;
-	margin: 0 0 0 30px;
-	position: relative;
+/* PANTALLA INICIO */
+#pantalla-inicial{
+    display: block;
+    text-align: center;
+    font-size: 30px;
 }
-#panelFinal h2{
-	color: #35e431;
-	font-family: lobster;
-	font-size: 2.5em;
-	text-shadow: 4px 4px 2px rgba(84, 84, 84, .5);
+#pantalla-inicial{
+    margin: 60px 0;
 }
-#panelInicio input{
-	font-size: 1.5em;
-	border-radius: 50%;
+.btn{
+    border: none;
+    background: #580078;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
 }
-
-
-#panelSorteo{
-}
-.dado{
-	height: 150px;
-	margin: 0 auto;
-	width: 150px;
-}
-.cubileteAmarillo{
-	background:url(imagenes/cubileteAmarillo.png);
-}
-.cubileteRojo{
-	background:url(imagenes/cubileteRojo.png);
-}
-.oculto{
-	display: none;
-}
-.panel{
-	/*background: pink;*/
-	clear: both;
-	float: left;
-	height: 500px;
-	margin: 1em 0 0 0;
-	width: 300px;
-}
-.visible{
-	display: inline;
-}
-
-@media screen and (max-width: 1030px){
-	h3{
-		margin: 0;
-		padding: 10px 0 15px 0;
-		font-size: 1.7em;
-	}
-	#panelContenedor{
-		/*background: lime;*/
-		position: relative;
-		width: 650px;
-		height: 300px;
-	}
-	#marcador{
-		/*background: gold;*/
-		height: 300px;
-		position: absolute;
-		right: 0;
-		padding: 0;
-	}
-	.panel{
-		/*background: pink;*/
-		height: 300px;
-		position: absolute;
-		padding: 0;
-		margin: 0;
-		left: 0;
-		width: 350px;
-	}
+.btn:hover{
+    transform: scale(1.1);
 }
 
 
 
+/* PANTALLA juego */
+#pantalla-juego{
+    display: none;
+}
+.pantalla-juego{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.pantalla-juego img{
+    max-width: 400px;
+    width: 100%;
+}
+.opciones{
+    max-width: 400px;
+    margin: auto;
+}
+.opcion{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+.opcion .letra{
+    background-color: #580078;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    border: 5px solid #fff;
+    position: relative;
+}
+.opcion .nombre{
+    background: #fff;
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 30px;
+    z-index: -2;
+    border-radius: 0 20px 20px 0;
+    padding: 7px 0 7px 30px;
+}
+/* clases que se aplicará cuando haya acertada la opcion  */
+.opcion .nombreAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.opcion .letraAcertada{
+    background-color: yellowgreen;
+    color: #fff ;
+}
+/* clases que se aplicaran cuando se equivoque en la opcion elegida */
+.opcion .nombreNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+.opcion .letraNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
 
-  
-  
-  
+
+/* PANTALLA final */
+#pantalla-final{
+    display: none;
+    text-align: center;
+}
+#pantalla-final #numCorrectas{
+    background-color: chartreuse;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+#pantalla-final #numIncorrectas{
+    background-color: darkred;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}

@@ -1,13 +1,21 @@
-// JavaScript for validating the form inputs
-const form = document.querySelector('form');
+const form = document.querySelector('.form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+
 form.addEventListener('submit', e => {
   e.preventDefault();
-  const name = document.querySelector('#name').value;
-  const email = document.querySelector('#email').value;
-  const message = document.querySelector('#message').value;
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageInput.value.trim();
   if (name === '' || email === '' || message === '') {
-    alert('PORFAVOR RELLENE EL FORMULARIO');
+    form.classList.add('animate');
+    setTimeout(() => {
+      form.classList.remove('animate');
+    }, 500);
   } else {
-    alert('TU MENSAJE HA SIDO ENVIADO');
+    // Enviar formulario aquí
   }
 });
+
+

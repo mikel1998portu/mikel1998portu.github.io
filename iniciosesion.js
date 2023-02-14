@@ -1,11 +1,9 @@
-document.getElementById('login-menu').addEventListener('submit', function(event) {
+$(document).ready(function() {
+  $("form").submit(function(event) {
     event.preventDefault();
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
-    if (username === 'admin' && password === '1234') {
-      alert('Login successful');
-    } else {
-      alert('Invalid login');
-    }
+    var email = $("#email").val();
+    var password = $("#password").val();
+    // Aquí puede agregar su lógica de autenticación
+    console.log("Email: " + email + ", Password: " + password);
   });
-  
+});

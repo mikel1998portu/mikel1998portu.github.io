@@ -1,8 +1,8 @@
 body {
   margin: auto;
-  background: url(img/image-four.jpg);
+  background: url(/img/ola-de-colores-6815-1808030931.jpeg);
   background-repeat: no-repeat;
-  background-size: 1750px; 
+  background-size: cover; 
 }
 
 /*MENU NAVEGACION*/
@@ -10,13 +10,15 @@ body {
     margin-left: 500px; /* se utiliza un porcentaje para que la posición del menú se ajuste automáticamente al tamaño de pantalla */
     margin-top: 20px;
     width: 60%; /* se utiliza un porcentaje para que el tamaño del menú se ajuste automáticamente al tamaño de pantalla */
+    display: flex;
+    align-items: flex-start;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: #fff;
+    align-items: flex-start;
+    color: black;
 }
 
 nav ul {
@@ -31,7 +33,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 18px;
 }
@@ -89,6 +91,59 @@ button[type=submit] {
 button[type=submit]:hover {
     background-color: #45a049;
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  
+  button[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: 90%;
+    }
+  }
+  
 
 /* Media Queries */
 @media (max-width: 600px) {

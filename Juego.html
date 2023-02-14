@@ -11,43 +11,41 @@
     <title>MATRIUX</title>
 </head>
 <body>
-    <div id="panelContenedor">
-		<div id="marcador">
-			<h3 id="colorJugador">Juegas con...</h3>
-			<h3>Asi va el tanteo</h3>
-			<input type="text" id="marcadorRojo" value="0">
-			<input type="text" id="marcadorAmarillo" value="0">
-			<p>*Click en el cubilete para lanzar</p>
-		</div>
-		<div id="panelInicio" class= "visible panel" >
-			<h3 id="mensaje">Elige ficha y juega</h3>
-			<input type="button" value="" id="elegirRojo" onclick="jugar();seleccionarFicha('rojo')">
-			<input type="button" value="" id="elegirAmarillo" onclick="jugar();seleccionarFicha('amarillo')">
-		</div>
-		<div id="panelSorteo" class="oculto panel">
-			<h3 id="mensaje">Click en el dado para sortear el turno</h3>
-			<div id="dadoSorteo" class="dado" onclick="sorteoInicial()" onmouseover="sobre()"></div>
-		</div>
-		<div id="panelJuego" class="oculto panel">
-			<h3 id="mensaje">Turno para...</h3>
-			<div id="dadoEnJuego" class="dado" onclick="tirada()" onmouseover="sobre()"></div>
-			<h3 id="alerta">Lo siento culpa mía, tendrás que recargar la página de nuevo</h3>
-		</div>
-		<div id="panelFinal" class="oculto panel">
-			<h2 id="mensaje">Ganador...</h2>
-			<div id="dadoGanador" class="dado"></div>
-			<input type="button" id="jugarDeNuevo" value="Nueva Partida" onclick="jugar()" >
-		</div>
-		
-	</div>
-	<canvas id="tablero" ></canvas>
-	
-	
-	<!-- Archivos y script javascript -->
-	<script>
-		iniciar()
-		
-	</script>
-  
+    <h1>ADIVINA LA BANDERA</h1>
+
+    <!-- Pantalla inicial -->
+    <div id="pantalla-inicial">
+        <p>¿A qué pais pertenece la bandera?</p>
+        <button class="btn" onclick="comenzarJuego()">COMENZAR A JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego -->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/ad.svg" alt="" id="imgBandera">
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <footer>Desarrollado por Matriux S.A</footer>
+
+
 </body>
 </html>

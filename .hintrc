@@ -56,7 +56,8 @@
           "-webkit-tap-highlight-color",
           "scroll-behavior",
           "text-decoration-skip-ink",
-          "text-align: -webkit-match-parent"
+          "text-align: -webkit-match-parent",
+          "width: fit-content"
         ]
       }
     ],

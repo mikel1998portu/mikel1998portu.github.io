@@ -4,84 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/FAVICON.png">
+    <!--CUSTOM CSS-->
+    <script href="contacto.js"></script>
+    <link rel="stylesheet" href="Contacto.css">
     <title>MATRIUX</title>
-     <!--FONT AWESOME-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!--FONT OSWALD-->
-     <enlace rel="preconectar" href="https://fonts.googleapis.com"><enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin><enlace href="https: //fonts.googleapis.com/css2? familia= Oswald:peso@200;300;400 & display=swap" rel="stylesheet">
-     <!--CUSTOM CSS-->
-     <link rel="stylesheet" href="stylesContacto.css">
 </head>
 <body>
-
-    <!--BARRA NAVEGACION-->
-
-    <div class="container">
-        <nav class="nav-main">
-            <img src="/img/logo.png" alt="Matriux logo" class="nav-brand"> 
-            <ul class="main-menu">
-                <li>
-                    <a href="index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="Empresa.html">EMPRESA</a>
-                </li>
-                <li>
-                    <a href="Servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a href="Servicios.html">VENTA DE EQUIPOS</a>
-                </li>
-                <li>
-                    <a href="Servicios.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a href="Servicios.html">MAS</a>
-                </li>
-                <li>
-                    <a href="Registro.html">REGISTRO</a>/<a href="Iniciosesion.html">INICIO SESION</a>
-                </li>
-                <li>
-                    <a href="metododepago.html">METODO DE PAGO</a>
-                </li>
-
-                
-            <!--
-            <div class="gcse-search"></div>
-    <script async src="https://cse.google.com/cse.js?cx=e27e897a77d184317">
-    </script>
-    <div class="toggle" onclick="alternar('menu')"></div>
-    </div>-->
-        </nav>
-    </div>
-
-    <div class="avatar">
-        <div class="avatar-mikel">
-            <h1>DISEÑADOR WEB</h1>
-            <h2> MIKEL BARAJAS</h2>
-            <img src="/img/myAvatar.jpg">
-        </div>   
-        <div class="avatar-elexpe">
-            <h1>COORDINADOR JEFE</h1>
-            <h2>JON ANDER ELEXPE</h2>
-            <img src="/img/myAvatar (1).png">
-        </div>
-        <div class="avatar-asier">
-            <h1>SECRETARIO EXITOSO</h1>
-            <h2>ASIER FERNANDEZ</h2>
-            <img src="/img/Asier.png">
-        </div>
-        <div class="avatar-eneko">
-            <h1>DISEÑADOR GRÁFICO</h1>
-            <h2>ENEKO RODRÍGUEZ</h2>
-            <img src="/img/AvatarEneko.png">
-        </div>
-        <div class="avatar-isma">
-            <h1>JEFE DE MANTENIMIENTO</h1>
-            <h2>ISMAEL MASSOUD</h2>
-            <img src="/img/Isma.png">
-        </div>
-    </div>
     
+      <!-- Responsive navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#!">MATRIUX S.A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<form class="form">
+    <h2>Formulario de contacto</h2>
+    <div class="form-group">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  
 </body>
 </html>
